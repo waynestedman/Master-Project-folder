@@ -1,0 +1,23 @@
+2016 workflow notes
+
+update Ruby gems:
+sudo gem update
+
+Install/Uninstall gems:
+sudo gem un/install ###
+
+To create a package.json file:
+npm init
+
+Folders:
+/builds		= final, compiled files
+/components	= various files used to build project, ex: SASS
+
+To setup Git:
+got to desired dir
+$git init
+
+git add .
+
+git commit -m “Comment”
+
