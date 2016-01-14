@@ -9,6 +9,5 @@
 	"author" : "Wayne Stedman",
 	"dependencies" : {
 		"gulp": "~3.9.0",
-		
 	}
 }
