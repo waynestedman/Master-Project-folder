@@ -17,7 +17,9 @@ To setup Git:
 got to desired dir
 $git init
 
-git add .
+$git add .
 
-git commit -m “Comment”
+$git commit -m “Comment”
 
+Install Gulp to project, as devDependency:
+$npm install --save-dev gulp
