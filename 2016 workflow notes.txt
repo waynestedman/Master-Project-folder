@@ -21,9 +21,12 @@ $git add .
 
 $git commit -m “Comment”
 
-Install Gulp to project, as devDependency:
+Install Gulp and other components to project, as devDependency:
 $npm install --save-dev gulp
 $npm install --save-dev gulp-util
 $npm install --save-dev gulp-coffee
 $npm install --save-dev gulp-concat
 
+$sudo npm install --save-dev gulp-browserify
+$npm install --save-dev jquery
+$npm install --save-dev mustache
