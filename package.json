@@ -1,13 +1,14 @@
 {
-	"name" : "master",
-	"version" : "0.0.1",
-	"description": "Master project description",
-	"repository": {
-   	"type": "git",
-   	"url": "https://github.com/waynestedman/?.git"
-  	},
-	"author" : "Wayne Stedman",
-	"dependencies" : {
-		"gulp": "~3.9.0",
-	}
+  "name": "master",
+  "version": "0.0.1",
+  "description": "Master project description",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waynestedman/?.git"
+  },
+  "author": "Wayne Stedman",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7"
+  }
 }

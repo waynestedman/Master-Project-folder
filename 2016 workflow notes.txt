@@ -23,3 +23,4 @@ $git commit -m “Comment”
 
 Install Gulp to project, as devDependency:
 $npm install --save-dev gulp
+$npm install --save-dev gulp-util
