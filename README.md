@@ -1,3 +1,3 @@
 # Read Me file
 
-Full of great descriptive content.
+Collection of files and folders that form the foundation of a project.
