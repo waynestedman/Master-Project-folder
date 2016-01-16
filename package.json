@@ -4,7 +4,7 @@
   "description": "Master project description",
   "repository": {
     "type": "git",
-    "url": "https://github.com/waynestedman/?.git"
+    "url": "https://github.com/waynestedman/Master-Project-folder.git"
   },
   "author": "Wayne Stedman",
   "devDependencies": {
