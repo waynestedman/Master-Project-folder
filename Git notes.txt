@@ -1,0 +1,19 @@
+Git notes
+
+in Project directory:
+$ git init
+
+add files to staging:
+$ git add .
+
+create first commit:
+$ git commit -m "First Commit"
+
+Go to GitHub:
+$ add repo
+
+Locally:
+$ git remote add origin https://github.com/waynestedman/commodore-new.git
+$ git push -u origin master
+
+in GitHub desktop, File -> Add Local Repository
