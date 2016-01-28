@@ -1,13 +1,13 @@
 2016 workflow notes
 
 update Ruby gems:
-sudo gem update
+$ sudo gem update
 
 Install/Uninstall gems:
-sudo gem un/install ###
+$ sudo gem un/install ###
 
 To create a package.json file:
-npm init
+$ npm init
 
 Folders:
 /builds		= final, compiled files
@@ -15,19 +15,21 @@ Folders:
 
 To setup Git:
 got to desired dir
-$git init
+$ git init
 
-$git add .
+$ git add .
 
-$git commit -m “Comment”
+$ git commit -m “Comment”
 
 Install Gulp and other components to project, as devDependency:
 $ npm install --save-dev gulp
 $ npm install --save-dev gulp-util
-$ sudo npm install --save-dev gulp-browserify
+$ npm install --save-dev gulp-concat
+$ npm install --save-dev gulp-browserify
 $ npm install --save-dev jquery
 $ npm install --save-dev gulp-livereload
 $ npm install --save-dev gulp-sass
+$ npm install --save-dev gulp-compass
 
 in _components/SASS:
 $ bourbon install
@@ -36,7 +38,6 @@ $ bitters install
 
 
 $ npm install --save-dev gulp-coffee
-$ npm install --save-dev gulp-concat
 $ npm install --save-dev mustache
 
 
