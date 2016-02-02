@@ -21,6 +21,9 @@ $ git add .
 
 $ git commit -m “Comment”
 
+in project dir:
+$ compass create <myproject> --bare
+
 Install Gulp and other components to project, as devDependency:
 $ npm install --save-dev gulp
 $ npm install --save-dev gulp-util
@@ -30,6 +33,7 @@ $ npm install --save-dev jquery
 $ npm install --save-dev gulp-livereload
 $ npm install --save-dev gulp-sass
 $ npm install --save-dev gulp-compass
+$ npm install --save-dev gulp-if
 
 in _components/SASS:
 $ bourbon install
