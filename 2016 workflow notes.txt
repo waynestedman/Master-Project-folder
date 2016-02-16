@@ -32,8 +32,13 @@ $ npm install --save-dev gulp-browserify
 $ npm install --save-dev jquery
 $ npm install --save-dev gulp-livereload
 $ npm install --save-dev gulp-sass
-$ npm install --save-dev gulp-compass
+/* $ npm install --save-dev gulp-compass */
 $ npm install --save-dev gulp-if
+$ npm install --save-dev gulp-autoprefixer
+$ npm install --save-dev gulp-postcss
+$ npm install --save-dev gulp-sourcemaps
+
+
 
 in _components/SASS:
 $ bourbon install
