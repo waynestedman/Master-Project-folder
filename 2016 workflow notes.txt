@@ -37,6 +37,7 @@ $ npm install --save-dev gulp-if
 $ npm install --save-dev gulp-autoprefixer
 $ npm install --save-dev gulp-postcss
 $ npm install --save-dev gulp-sourcemaps
+$ npm install --save-dev gulp-uglify
 
 
 
