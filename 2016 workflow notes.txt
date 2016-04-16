@@ -1,55 +1,66 @@
 2016 workflow notes
 
-update Ruby gems:
-$ sudo gem update
-
-Install/Uninstall gems:
-$ sudo gem un/install ###
-
-To create a package.json file:
-$ npm init
-
 Folders:
 /builds		= final, compiled files
 /components	= various files used to build project, ex: SASS
 
-To setup Git:
+To setup Git using GitHub:
 got to desired dir
 $ git init
-
 $ git add .
 
+Commit to Master:
+in Desktop, Commit
+- or -
 $ git commit -m “Comment”
 
-in project dir:
-$ compass create <myproject> --bare
+In Desktop, Publish (can make private).
+
 
 Install Gulp and other components to project, as devDependency:
-$ npm install --save-dev gulp
-$ npm install --save-dev gulp-util
-$ npm install --save-dev gulp-concat
-$ npm install --save-dev gulp-browserify
-$ npm install --save-dev jquery
-$ npm install --save-dev gulp-livereload
-$ npm install --save-dev gulp-sass
-/* $ npm install --save-dev gulp-compass */
-$ npm install --save-dev gulp-if
-$ npm install --save-dev gulp-autoprefixer
-$ npm install --save-dev gulp-postcss
-$ npm install --save-dev gulp-sourcemaps
-$ npm install --save-dev gulp-uglify
-
-
+npm install gulp --save-dev
+npm install gulp-ruby-sass --save-dev
+npm install gulp-util --save-dev
+npm install gulp-concat --save-dev 
+npm install jquery --save-dev
+npm install gulp-livereload --save-dev
+npm install gulp-if --save-dev 
+npm install gulp-autoprefixer --save-dev 
+npm install gulp-postcss --save-dev 
+npm install gulp-sourcemaps --save-dev 
+npm install gulp-uglify --save-dev 
 
 in _components/SASS:
 $ bourbon install
 $ neat install
 $ bitters install
 
-
-$ npm install --save-dev gulp-coffee
-$ npm install --save-dev mustache
-
-
+——— Troubleshooting ———
 This will delete the Bourbon files from the current directory and regenerate it:
 $ bourbon update
+
+Update Ruby gems:
+$ sudo gem update
+
+Install/Uninstall gems:
+$ sudo gem un/install ###
+
+To update npm:
+npm update {to update local nom packages; dir where package.json is}
+sudo npm install npm -g {to update global npm packages}
+
+To create a package.json file:
+$ npm init
+
+
+—— Archive ———
+in project dir:
+$ compass create <myproject> --bare
+
+
+Not Used:
+$ npm install gulp-compass --save-dev
+$ npm install gulp-sass --save-dev 
+$ npm install gulp-browserify --save-dev
+$ npm install gulp-coffee --save-dev
+$ npm install mustache --save-dev
