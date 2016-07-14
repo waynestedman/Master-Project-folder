@@ -4,32 +4,43 @@ Folders:
 /builds		= final, compiled files
 /components	= various files used to build project, ex: SASS
 
+*** GitHub setup **
 To setup Git using GitHub:
 got to desired dir
 $ git init
 $ git add .
+In GitHub, create the repo	{use same name as local folder}
+To push an existing repo up to GitHub:
+$ git remote add origin https://github.com/waynestedman/####.git
+$ git remote -v
 
 Commit to Master:
 in Desktop, Commit
 - or -
 $ git commit -m “Comment”
 
-In Desktop, Publish (can make private).
+In Desktop:
+Reload Repositories
+Add repo	{pick the folder}
+Publish		{can make private}
 
-
+** Gulp setup **
 Install Gulp and other components to project, as devDependency:
 npm install gulp --save-dev
-npm install gulp-ruby-sass --save-dev
+npm install gulp-sass --save-dev	{npm package}
 npm install gulp-util --save-dev
 npm install gulp-concat --save-dev 
-npm install jquery --save-dev
 npm install gulp-livereload --save-dev
 npm install gulp-if --save-dev 
 npm install gulp-autoprefixer --save-dev 
-npm install gulp-postcss --save-dev 
 npm install gulp-sourcemaps --save-dev 
 npm install gulp-uglify --save-dev 
 
+—— optional ——
+npm install gulp-postcss --save-dev	{for Autoprefixer, needed?}
+npm install jquery --save-dev		{needed ?}
+
+** Bourbon **
 in _components/SASS:
 $ bourbon install
 $ neat install
@@ -39,28 +50,35 @@ $ bitters install
 This will delete the Bourbon files from the current directory and regenerate it:
 $ bourbon update
 
-Update Ruby gems:
-$ sudo gem update
-
-Install/Uninstall gems:
-$ sudo gem un/install ###
-
 To update npm:
 npm update {to update local nom packages; dir where package.json is}
-sudo npm install npm -g {to update global npm packages}
+npm update -g {to update all global npm packages}
+
+To check nam packages to see if any are out of date:
+$ npm-check -gu  {for global packages}
+$ nom-check -u   {in project dir, for local packages}
 
 To create a package.json file:
 $ npm init
 
 
 —— Archive ———
+Update Ruby:
+gem update --system
+
+Update Ruby gems:
+$ sudo gem update
+
+Install/Uninstall gems:
+$ sudo gem un/install ###
+
 in project dir:
 $ compass create <myproject> --bare
 
 
 Not Used:
-$ npm install gulp-compass --save-dev
-$ npm install gulp-sass --save-dev 
-$ npm install gulp-browserify --save-dev
-$ npm install gulp-coffee --save-dev
-$ npm install mustache --save-dev
+npm install gulp-compass --save-dev
+npm install gulp-ruby-sass --save-dev
+npm install gulp-browserify --save-dev
+npm install gulp-coffee --save-dev
+npm install mustache --save-dev
