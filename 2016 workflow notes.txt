@@ -1,10 +1,14 @@
 2016 workflow notes
 
-Folders:
+**** Project Folders ****
 /builds		= final, compiled files
+  /css
+  /js
 /components	= various files used to build project, ex: SASS
+  /sass
+  /js
 
-*** GitHub setup **
+**** GitHub setup ****
 To setup Git using GitHub:
 got to desired dir
 $ git init
@@ -24,7 +28,7 @@ Reload Repositories
 Add repo	{pick the folder}
 Publish		{can make private}
 
-** Gulp setup **
+**** Gulp setup ****
 Install Gulp and other components to project, as devDependency:
 npm install gulp --save-dev
 npm install gulp-sass --save-dev	{npm package}
@@ -40,13 +44,24 @@ npm install gulp-uglify --save-dev
 npm install gulp-postcss --save-dev	{for Autoprefixer, needed?}
 npm install jquery --save-dev		{needed ?}
 
-** Bourbon **
-in _components/SASS:
+**** Bourbon ****
+in _components/SASS {Ruby install}:
 $ bourbon install
 $ neat install
 $ bitters install
 
-——— Troubleshooting ———
+—— alt NPM install method no Bitters ——
+npm install bourbon --save-dev
+npm install bourbon-neat --save-dev
+
+—— in SASS file: ——
+@import "bourbon";
+@import "base/base";
+
+**** Compass ****
+compass create --bare		{project dir}
+
+**** Troubleshooting ****
 This will delete the Bourbon files from the current directory and regenerate it:
 $ bourbon update
 
@@ -61,8 +76,6 @@ $ nom-check -u   {in project dir, for local packages}
 To create a package.json file:
 $ npm init
 
-
-—— Archive ———
 Update Ruby:
 gem update --system
 
@@ -72,6 +85,7 @@ $ sudo gem update
 Install/Uninstall gems:
 $ sudo gem un/install ###
 
+**** Archive ****
 in project dir:
 $ compass create <myproject> --bare
 
