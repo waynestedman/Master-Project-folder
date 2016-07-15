@@ -60,6 +60,8 @@ npm install bourbon-neat --save-dev
 
 **** Compass ****
 compass create --bare		{project dir}
+delete the /sass that is created
+copy in a good config.rb
 
 **** Troubleshooting ****
 This will delete the Bourbon files from the current directory and regenerate it:
