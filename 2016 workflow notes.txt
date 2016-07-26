@@ -28,26 +28,42 @@ Reload Repositories
 Add repo	{pick the folder}
 Publish		{can make private}
 
+**** Compass ****
+compass create --bare		{project dir}
+delete the /sass that is created
+copy in a good config.rb
+
+**** Susy & Breakpoint install ****
+gem install susy
+gem install breakpoint		{optional}
+
 **** Gulp setup ****
-Install Gulp and other components to project, as devDependency:
+—— Install Gulp and other components to project, as devDependency: ——
 npm install gulp --save-dev
-npm install gulp-sass --save-dev	{npm package}
-npm install gulp-util --save-dev
-npm install gulp-concat --save-dev 
+npm install gulp-util --save-dev 
+********** 	{pick ONE of the following}
+npm install gulp-compass --save-dev
+npm install gulp-sass --save-dev	{if you’re not using Compass; npm package}
+**********
 npm install gulp-livereload --save-dev
 npm install gulp-if --save-dev 
 npm install gulp-autoprefixer --save-dev 
 npm install gulp-sourcemaps --save-dev 
-npm install gulp-uglify --save-dev 
+npm install gulp-uglify --save-dev
+npm install gulp-concat --save-dev
+npm install jquery --save-dev
 
 —— optional ——
 npm install gulp-postcss --save-dev	{for Autoprefixer, needed?}
-npm install jquery --save-dev		{needed ?}
+
+!!!! If you want to use a package.json file, that uses the same component ver that are listed, just type the following and all the dependencies will be setup. This is good when someone else is going to work on the project and you want to make sure they on using the same ver. !!!!
+$ npm install
+
 
 **** Bourbon ****
-in _components/SASS {Ruby install}:
+in _components/sass	{Ruby install}:
 $ bourbon install
-$ neat install
+$ neat install		{if you’re not using Susy}
 $ bitters install
 
 —— alt NPM install method no Bitters ——
@@ -58,10 +74,6 @@ npm install bourbon-neat --save-dev
 @import "bourbon";
 @import "base/base";
 
-**** Compass ****
-compass create --bare		{project dir}
-delete the /sass that is created
-copy in a good config.rb
 
 **** Troubleshooting ****
 This will delete the Bourbon files from the current directory and regenerate it:
@@ -71,7 +83,7 @@ To update npm:
 npm update {to update local nom packages; dir where package.json is}
 npm update -g {to update all global npm packages}
 
-To check nam packages to see if any are out of date:
+To check npm packages to see if any are out of date:
 $ npm-check -gu  {for global packages}
 $ nom-check -u   {in project dir, for local packages}
 
@@ -88,12 +100,8 @@ Install/Uninstall gems:
 $ sudo gem un/install ###
 
 **** Archive ****
-in project dir:
-$ compass create <myproject> --bare
-
 
 Not Used:
-npm install gulp-compass --save-dev
 npm install gulp-ruby-sass --save-dev
 npm install gulp-browserify --save-dev
 npm install gulp-coffee --save-dev
