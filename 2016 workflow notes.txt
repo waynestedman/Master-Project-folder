@@ -51,6 +51,7 @@ npm install gulp-autoprefixer --save-dev
 npm install gulp-sourcemaps --save-dev 
 npm install gulp-uglify --save-dev
 npm install gulp-concat --save-dev
+npm install gulp-browserify --save-dev
 npm install jquery --save-dev
 
 —— optional ——
@@ -70,9 +71,15 @@ $ bitters install
 npm install bourbon --save-dev
 npm install bourbon-neat --save-dev
 
-—— in SASS file: ——
+**** Imports in style.scss SASS file ****
+@import "compass”;
+@import "compass/css3”;
+@import "compass/typography”;
+@import "compass/utilities”;
 @import "bourbon";
 @import "base/base";
+@import "susy";
+@import "breakpoint";
 
 
 **** Troubleshooting ****
@@ -103,6 +110,5 @@ $ sudo gem un/install ###
 
 Not Used:
 npm install gulp-ruby-sass --save-dev
-npm install gulp-browserify --save-dev
 npm install gulp-coffee --save-dev
 npm install mustache --save-dev
