@@ -71,6 +71,12 @@ $ bitters install
 npm install bourbon --save-dev
 npm install bourbon-neat --save-dev
 
+
+**** Compass config - in config.rb: ****
+require ‘susy’
+require ‘breakpoint’
+require 'modular-scale'
+
 **** Imports in style.scss SASS file ****
 @import "compass”;
 @import "compass/css3”;
@@ -80,7 +86,7 @@ npm install bourbon-neat --save-dev
 @import "base/base";
 @import "susy";
 @import "breakpoint";
-
+@import 'modular-scale';
 
 **** Troubleshooting ****
 This will delete the Bourbon files from the current directory and regenerate it:
@@ -96,6 +102,14 @@ $ nom-check -u   {in project dir, for local packages}
 
 To create a package.json file:
 $ npm init
+
+Update Homebrew:
+brew update
+
+Update rbenv:
+$ brew update
+$ brew upgrade rbenv ruby-build
+s
 
 Update Ruby:
 gem update --system
