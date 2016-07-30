@@ -41,10 +41,10 @@ gem install breakpoint		{optional}
 —— Install Gulp and other components to project, as devDependency: ——
 npm install gulp --save-dev
 npm install gulp-util --save-dev 
-********** 	{pick ONE of the following}
+<<<<	{pick ONE of the following}  >>>>
 npm install gulp-compass --save-dev
 npm install gulp-sass --save-dev	{if you’re not using Compass; npm package}
-**********
+<<<<  >>>>
 npm install gulp-livereload --save-dev
 npm install gulp-if --save-dev 
 npm install gulp-autoprefixer --save-dev 
@@ -75,7 +75,6 @@ npm install bourbon-neat --save-dev
 **** Compass config - in config.rb: ****
 require ‘susy’
 require ‘breakpoint’
-require 'modular-scale'
 
 **** Imports in style.scss SASS file ****
 @import "compass”;
@@ -86,7 +85,6 @@ require 'modular-scale'
 @import "base/base";
 @import "susy";
 @import "breakpoint";
-@import 'modular-scale';
 
 **** Troubleshooting ****
 This will delete the Bourbon files from the current directory and regenerate it:
@@ -115,10 +113,13 @@ Update Ruby:
 gem update --system
 
 Update Ruby gems:
-$ sudo gem update
+gem update
+
+List installed gems:
+gem list
 
 Install/Uninstall gems:
-$ sudo gem un/install ###
+gem un/install ###
 
 **** Archive ****
 
