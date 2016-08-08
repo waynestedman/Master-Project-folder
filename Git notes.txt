@@ -17,3 +17,9 @@ $ git remote add origin https://github.com/waynestedman/commodore-new.git
 $ git push -u origin master
 
 in GitHub desktop, File -> Add Local Repository
+
+*******************
+updating repo after changes to gitignore:
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working"
