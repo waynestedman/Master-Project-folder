@@ -1,0 +1,8 @@
+
+Replace:
+utf8mb4
+utf8
+
+Replace:
+localhost
+abc.sfwebfoundry.com
