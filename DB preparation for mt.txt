@@ -4,5 +4,5 @@ utf8mb4
 utf8
 
 Replace:
-localhost
+localhost/abc
 abc.sfwebfoundry.com
